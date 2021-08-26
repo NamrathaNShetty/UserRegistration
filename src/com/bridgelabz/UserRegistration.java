@@ -58,7 +58,7 @@ public class UserRegistration {
          System.out.println(userRegistration.validateLastName("She"));
          System.out.println(userRegistration.validateEMail("nam.xyz@yahoo.com"));
          System.out.println(userRegistration.validatePhoneNo("91 9587823545"));
-         System.out.println(userRegistration.validatePasswordMin8Char("abcdefgh"));
+         System.out.println(userRegistration.validatePasswordMin8Char("Abcdefgh"));
 
 
        }
