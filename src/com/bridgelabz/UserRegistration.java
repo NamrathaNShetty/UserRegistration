@@ -12,7 +12,7 @@ public class UserRegistration {
     private String lastName = "^[A-Z]([a-z]{2,15})*";
     private String eMail = "^[a-z0-9]{3,}(.[0-9a-z]+)*@[a-z]{2,15}.(com|bl)(co.in)*$";
     private String phoneNo ="^[91]+[ ]{0,1}+[1-9][0-9]{9}$";
-    private String password = "^[A-Za-z0-9]{8,20}";
+    private String password = "^[0-9A-Za-z]*[!@#$%&][A-Za-z0-9]*$";
     Scanner sn = new Scanner(System.in);
 
     public UserRegistration() {
@@ -58,7 +58,7 @@ public class UserRegistration {
          System.out.println(userRegistration.validateLastName("She"));
          System.out.println(userRegistration.validateEMail("nam.xyz@yahoo.com"));
          System.out.println(userRegistration.validatePhoneNo("91 9587823545"));
-         System.out.println(userRegistration.validatePasswordMin8Char("Abcd4efgh"));
+         System.out.println(userRegistration.validatePasswordMin8Char("A$bcd4ehlkl"));
 
 
        }
